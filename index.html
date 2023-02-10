@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta charset="UTF-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="css/bootstrap.min.css">
+			<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+			<title>java-script</title> 
+		   
+			
+			
+	</head>
+		<body>
+			
+                <section class="d-flex justify-content-center align-items-center pt-5 ">
+				
+					<div class="shadow p-5 col-sm-6 ">
+					
+						<button style="color:#fff; background-color:#000;"><iconify-icon icon="material-symbols:add" id="add" onclick="additional()"></iconify-icon></button> 
+						<input id="next" value="" >
+						<button class="" style="color:#fff;background-color:#000;"><iconify-icon icon="subway:subtraction-1" class="" id="sub" onclick="subtraction()" ></iconify-icon></button>
+					</div>
+
+			 
+			    </section>
+				
+				<script>
+				 let a=0;
+					function additional(){
+					a = document.getElementById('next').value
+					a++				
+					document.getElementById('next').value = a
+					 
+			     	
+						
+					 }
+					function subtraction(){
+					a = document.getElementById('next').value
+					  if(a > 0){
+					a--				
+					document.getElementById('next').value = a
+					  
+			     	   
+					}
+					
+					}
+				</script>
+			
+			
+		</body>
+</html>
